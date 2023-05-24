@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criptografia - Alura</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container-titulo">
+            <img src="LogoALura.png" class="logoAlura">
+        </div>
+    </header>
+    <main>
+        <section class="AreaTexto">
+            <textarea cols="15" rows="5" placeholder="Digite seu texto..." id="mensagem" class="mensagem"></textarea>
+            <h6>Somente letras minusculas e sem ascento</h6>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="codificar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="decodificar()">Descriptografar</button>
+            </div>
+        </section>
+              
+        <section class="exibir">
+            <div class="exibicao" id="exibicao">
+                <textarea id="mensagem1"></textarea>
+                <div id="conteudo" class="conteudo">
+                    <img src="imagem.svg" class="imagem" id="imagem">
+                    <p id="paragrafo">Nenhum texto digitado. Digite alguma coisa.</p>
+                </div>
+                <button class="btn-copiar" id="copiar" onclick="copiarTexto()">Copiar</button> 
+            </div>
+        </section>
+    </main>
+</body>
+</html>
