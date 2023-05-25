@@ -2,6 +2,7 @@
 *{
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    background: #E5E5E5;
 }
 
 /* Estilizando o tamanho e espaçamento da imagem do cabeçalho */
@@ -117,7 +118,7 @@ e de interagir com o textarea. */
     border: none;
     background: transparent;
     resize: none;
-    width: 80%;
+    width: 100%;
     height: 0%;
     font-size: 22px;
     pointer-events: none;
@@ -156,6 +157,9 @@ e adicionando uma circuferencia as bordas. */
 
 /* Estilização para dispositivos com a resolução abaixo de 950px */
 @media screen and (max-width: 950px) {
+    header{
+        padding-left: 10%;
+    }
     /* Estilização do tamanho da imagem do cabeçalho alterada para melhor adaptação */
     header img{
         width: 3%;
@@ -163,14 +167,16 @@ e adicionando uma circuferencia as bordas. */
     /* Estilização da exibição do conteudo principal alterada para 'block', agora os elementos
     serão exibidos um abaixo do outro. */
     main {
-        display: block;
+        display: inline-block;
+        padding-left: 10%;
+        
     }
     /* Aqui foi estilizado espaçamento e tamanho do textarea com a tag '.mensagem'*/
     .mensagem{
         margin-bottom: 0%;
         padding-bottom: 0%;
         margin-left: 10%;
-        width: 80%;
+        width: 100%;
     }
     /* Aqui foi alterado espaçamento á esquerda do subtitulo. */
     .AreaTexto h6{
@@ -198,9 +204,7 @@ e adicionando uma circuferencia as bordas. */
         position: relative;
         width: 75%;
         height: 200px;
-        padding-bottom: 10%;
-        margin-bottom: 5%;
-        margin: 0 auto 10% auto;
+        margin: 0 auto 0 auto;
     }
     
     /* Aqui foi alterado a exibição da imagem com a tag '.imagem-conteudo'*/
@@ -225,8 +229,9 @@ e adicionando uma circuferencia as bordas. */
 
     /* Aqui foi alterado o tamanho da div 'botoes' e do espaçamento. */
     .botoes{
+        background-color:#E5E5E5;
         padding-left: 12%;
-        margin: 0;
+        margin-right: 0;
         width: 100%;
     }
 
@@ -242,4 +247,5 @@ e adicionando uma circuferencia as bordas. */
         display: block;
         width: 80%;
     }
+
 }
