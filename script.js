@@ -18,7 +18,7 @@ function codificar() {
       let regex = new RegExp(vogal, "gi");
       if(valor.includes(vogal)) {
          valor = valor.replace(regex, substituicao[i]);
-         atualizar = true
+         atualizar = true;
       }
    }
 
@@ -28,7 +28,7 @@ function codificar() {
    
    }
    let mensagem1 = document.getElementById("mensagem1");
-   mensagem1.value = valor
+   mensagem1.value = valor;
    mensagem.value = valor;
 
 }
@@ -47,7 +47,7 @@ function decodificar() {
       let regex = new RegExp(substituido, "gi");
       if(valor.includes(substituido)) {
          valor = valor.replace(regex, letras[i]);
-         atualizar = true
+         atualizar = true;
       }
    }
 
@@ -56,7 +56,7 @@ function decodificar() {
       exibirBotao()  
    }
    let mensagem1 = document.getElementById("mensagem1");
-   mensagem1.value = valor
+   mensagem1.value = valor;
    mensagem.value = valor;
 
 }
@@ -75,13 +75,13 @@ e mudar a exibição, deixando o 'conteudo' invisivel */
 function limparImagem() {
    var conteudo = document.getElementById("conteudo");
    
-   conteudo.style.display = "none"
+   conteudo.style.display = "none";
 }
 
 /*Aqui temos uma função que vai pegar o valor de um 'textarea' e de um 'button' com a tag copiar,
 e então mudar a exibição do bottun e o tamanho do 'textarea'. */
 function exibirBotao() {
-   var mensagem1 = document.getElementById("mensagem1")
+   var mensagem1 = document.getElementById("mensagem1");
    var copiar = document.getElementById("copiar");
 
    copiar.style.display = "inline-block";
