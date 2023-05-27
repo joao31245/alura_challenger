@@ -167,7 +167,7 @@ e adicionando uma circuferencia as bordas. */
     /* Estilização da exibição do conteudo principal alterada para 'block', agora os elementos
     serão exibidos um abaixo do outro. */
     main {
-        display: inline-block;
+        display: block;
         padding-left: 10%;
         
     }
@@ -202,7 +202,7 @@ e adicionando uma circuferencia as bordas. */
     Além disso foi alterado o tamanho e o espaçamento da página. */
     .exibicao{
         position: relative;
-        width: 75%;
+        width: 80%;
         height: 200px;
         margin: 0 auto 0 auto;
     }
@@ -215,8 +215,10 @@ e adicionando uma circuferencia as bordas. */
     /* Aqui foi alterado a estilização do 'button' com a tag '.btn-copiar', mudando
     seu tamanho e espaçamento. */
     .btn-copiar{
+        position: absolute;
         width: 50%;
-        margin-top: 10%;
+        bottom: 5%;
+        right: 25%;
     }
 }
 
@@ -247,5 +249,6 @@ e adicionando uma circuferencia as bordas. */
         display: block;
         width: 80%;
     }
+    
 
 }
