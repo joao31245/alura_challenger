@@ -232,6 +232,7 @@ e adicionando uma circuferencia as bordas. */
     header img{
         width: 6%;
     }
+    /*Aqui foi alterado o espaçamento dos elementos abaixo*/
     main{
         display: inline-block;
         padding-left: 0%;
@@ -252,6 +253,8 @@ e adicionando uma circuferencia as bordas. */
     }
     .exibicao{
         margin-left: 2.5%;
+        margin-top: 0%;
+        margin-right: 0%;
     }
 
     /* Aqui foi alterado a exibição dos botões e o tamanho.
